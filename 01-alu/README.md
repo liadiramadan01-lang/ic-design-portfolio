@@ -18,7 +18,7 @@ Ce projet est le premier d une longue série, dans le domaine de l'ic design , c
 
 ## Project Structure / Structure du projet
 
-![Structure](docss/structure.png)
+![Structure](docs/structure.png)
 
 ## How to simulate / Comment simuler
 **Compilation :**
