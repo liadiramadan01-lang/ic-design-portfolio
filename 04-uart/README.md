@@ -12,8 +12,9 @@ L'UART (Universal Asynchronous Receiver Transmitter) est un protocole de communi
 
 ## UART Frame / Trame UART
 
-IDLE START D0 D1 D2 D3 D4 D5 D6 D7 STOP
-1 0 b0 b1 b2 b3 b4 b5 b6 b7 1
+| IDLE | START | D0 | D1 | D2 | D3 | D4 | D5 | D6 | D7 | STOP |
+|------|-------|----|----|----|----|----|----|----|-----|------|
+| 1 | 0 | b0 | b1 | b2 | b3 | b4 | b5 | b6 | b7 | 1 |
 
 ## Parameters / Paramètres
 
