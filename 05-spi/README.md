@@ -13,9 +13,7 @@ Le SPI (Serial Peripheral Interface) est un protocole de communication série sy
 |CS | 1111 0000000000000000 1111|
 |-----|---------------------------|
 |SCLK | 0000 0101010101010101 0000|
-|-----|-----------------------------|
 |MOSI | xxxx D7 D6 D5 D4 D3 D2 D1 D0|
-|-----|-----------------------------|
 |MISO | xxxx D7 D6 D5 D4 D3 D2 D1 D0|
 
 
