@@ -1,5 +1,6 @@
 package cpu_pkg;
     
+    //type d imm
     typedef enum logic[2:0] { 
         imm_I=3'b000,
         imm_S=3'b001,
@@ -8,6 +9,7 @@ package cpu_pkg;
         imm_J=3'b100
     } imm_sel_t;
 
+    // Operations de l alu
     typedef enum logic[3:0] { 
         ADD=4'b0000,
         SUB=4'b0001,
@@ -22,6 +24,7 @@ package cpu_pkg;
         PASS_B=4'b1010
     } alu_op_t;
 
+    // CLASSE 
     typedef enum logic[2:0] { 
         cls_ADD_direct=3'b000,
         cls_PASS=3'b001,
@@ -29,5 +32,24 @@ package cpu_pkg;
         cls_R=3'b011,
         cls_I=3'b100
     } class_t;
+
+    //origine de l ecriture en rd
+    typedef enum logic[1:0] { 
+        WB_alu=2'b00,
+        WB_mem=2'b01,
+        WB_pc4=2'b10
+    } wb_sel_t;
+
+    //possible entree a (1) de l alu
+    typedef enum logic { 
+        src_rs1=1'b0,
+        src_pc=1'b1
+     } src_a_t;
+
+    //possible entree b (2) de l alu
+    typedef enum logic { 
+        src_rs2=1'b0,
+        src_imm=1'b1
+    } src_b_t;
 
 endpackage
